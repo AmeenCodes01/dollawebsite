@@ -38,8 +38,8 @@ export const homeObjTwo = {
 
 export const homeObjThird = {
   id: "signup",
-  lightBg: false,
-  lightText: true,
+  lightBg: true,
+  lightText: false,
   lightTextDesc: false,
   topLine: "Premium bank",
   headline: "Sign Up",

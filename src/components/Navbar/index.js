@@ -1,5 +1,4 @@
 import React from "react";
-
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -12,14 +11,14 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
-function Navbar({toggle}) {
+function Navbar({ toggle }) {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">dolla</NavLogo>
           <MobileIcon>
-            <FaBars  onClick={toggle}/>
+            <FaBars onClick={toggle} />
           </MobileIcon>
           <NavMenu>
             <NavItem>
