@@ -7,7 +7,7 @@ export const InfoContainer = styled.div`
     padding: 100px 0;
   }
   @media screen and (min-width: 768px) {
-    height: 100vh;
+    /* height: 100vh; */
   }
 `;
 export const InfoWrapper = styled.div`

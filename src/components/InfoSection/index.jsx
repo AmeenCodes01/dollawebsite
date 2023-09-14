@@ -12,6 +12,9 @@ import {
   ImgWrap,
   Img,
 } from "./InfoElements";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { Button } from "../ButtonElement";
 function InfoSection({
   lightBg,
@@ -29,8 +32,12 @@ function InfoSection({
   dark,
   dark2,
 }) {
-  console.log("hi");
-  console.log(src1);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(window.scrollX, window.scrollY - 80);
+    console.log("rgr");
+  }, [pathname == "about" || "services" || "signup"]);
   return (
     <>
       <InfoContainer id={id} lightBg={lightBg}>
